@@ -1,0 +1,222 @@
+/*paginatin*/
+.pagination { clear:both; padding:20px 0; position:relative; font-size:11px; line-height:13px; } 
+.pagination span, .pagination a { display:block; float:left; margin: 2px 2px 2px 0; padding:6px 9px 5px 9px; text-decoration:none; width:auto; color:#fff; background: #b7b7b7; } 
+.pagination a:hover{ color:#fff; background: #3279BB; } 
+.pagination .current{ padding:6px 9px 5px 9px; background: #000; color:#fff; } 
+
+
+/*pop up*/
+.pop-mask {
+    background-color: rgba(0, 0, 0, 0.80);
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.cls-event-detail {
+    background: #fff none repeat scroll 0 0;
+    border: 7px solid #d9d9d9;
+    border-radius: 30px 0 30px 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 47px 20px 20px;
+    position: fixed;
+    right: 0;
+    top: 10%;
+    width: 600px;
+    z-index: 2;
+	min-height:400px;
+}
+
+.cls-event-detail .det-left {
+    width: 100%;
+}
+
+
+
+.cls-event-detail .det-right {
+    float: right;
+    margin-top: 14px;
+    width: 100%;
+}
+
+.cls-event-detail .eve-title {
+    color: maroon;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.cls-event-detail .eve-desc {
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+
+
+.cls-event-detail .eve-date, .cls-event-detail .eve-time, .cls-event-detail .eve-location {
+    font-size: 14px;
+}
+
+
+.cls-event-detail .close-pop a {
+    background: rgba(0, 0, 0, 0) url("delete-message-icon.png") no-repeat scroll 0 0;
+    display: block;
+    font-size: 0;
+    height: 32px;
+    text-indent: -1e+8px;
+    width: 32px;
+}
+
+ .cls-event-detail .close-pop {
+    position: absolute;
+    right: -11px;
+    top: -11px;
+}
+
+
+
+
+
+
+
+
+/*==========================Simple-Events-Plugin-List-Mode-Start=======================================*/
+
+
+
+
+#srel-main-div .head-event h2 {
+    border-bottom: 1px solid #d1d1d1;
+    color: darkred;
+    font-family: Arial;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+
+
+#srel-main-div .srel-content-left {
+    border-left: 5px solid maroon;
+    float: left;
+    margin: 14px;
+    width: 300px;
+}
+
+
+#srel-main-div .srel-content-right {
+    float: right;
+    width: 250px;
+}
+
+
+.srel-content::after, .srel-content::before {
+    clear: both;
+    content: "";
+    display: block;
+    overflow: hidden;
+}
+
+#srel-main-div .srel-content {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid #d1d1d1;
+    border-radius: 20px 0 30px;
+    border-top: 1px solid #d1d1d1;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+
+#srel-main-div .srel-content-right h4 {
+    color: maroon;
+    font-family: arial;
+    font-size: 18px;
+    margin: 9px 0 4px;
+}
+
+
+
+#srel-main-div .srel-content-right p {
+    color: #000;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+.click-to-view::after, .click-to-view::before {
+    clear: both;
+    content: "";
+    display: block;
+    overflow: hidden;
+}
+
+#srel-main-div .srel-content-right .click-to-view {
+    background: maroon none repeat scroll 0 0;
+    border-radius: 5px;
+    float: left;
+    margin-top: 11px;
+    transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    -moz-transform: skewX(10deg);
+    -ms-transform: skewX(10deg);
+}
+
+#srel-main-div .srel-content-right .click-to-view:hover {
+    opacity: 0.8;
+}
+
+#srel-main-div .srel-content-right .click-to-view a {
+    color: #fff;
+    display: block;
+    font-family: arial;
+    font-size: 9px;
+    padding: 6px 11px;
+    text-shadow: 0 0 1px #fff;
+    text-transform: uppercase;
+}
+
+
+#srel-main-div .pagination .current {
+    background: maroon none repeat scroll 0 0;
+    color: #fff;
+    padding: 6px 9px 5px;
+}
+
+
+#srel-main-div .pagination a:hover {
+    background: maroon none repeat scroll 0 0;
+    opacity: 0.8;
+}
+
+
+/*=================Simple-Events-Responsive-Start=======================*/
+
+@media only screen and (min-width:320px) and (max-width:643px){
+
+
+#srel-main-div .srel-content-right {
+    float: right;
+    padding-left: 14px;
+    width: 100%;
+}
+
+#srel-main-div .srel-content-left {
+    border-left: 5px solid maroon;
+    float: left;
+    margin: 14px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+	
+	
+}
+
+
+/*=================Simple-Events-Responsive-Close=======================*/
+
+
+/*==========================Simple-Events-Plugin-List-Mode-Close=======================================*/
